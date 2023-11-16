@@ -44,5 +44,7 @@ func simpleLogin() error {
 }
 
 func main() {
-	simpleLogin()
+	if err := simpleLogin(); err != nil {
+		fmt.Println("Error!!!")
+	}
 }
